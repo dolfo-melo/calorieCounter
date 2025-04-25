@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Calorias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Contador de Calorias</h1>
+    <form id="calorie-counter">
+        
+        <div class="budget-info">
+            <label for="budget">Calorias Totais</label>
+            <input id="budget" type="number" min="0" placeholder="Calorias Diárias" required>
+        </div>
+
+        <fieldset id="breakfast">
+            <legend>Cafe da Manhâ</legend>
+            <div class="înput-container"></div>
+        </fieldset>
+        
+        <fieldset id="lunch">
+            <legend>Almoço</legend>
+            <div class="înput-container"></div>
+        </fieldset>
+        
+        <fieldset id="tea-time">
+            <legend>Lanche da Tarde</legend>
+            <div class="înput-container"></div>
+        </fieldset>
+        
+        <fieldset id="dinner">
+            <legend>Jantar</legend>
+            <div class="înput-container"></div>
+        </fieldset>
+
+        <label for="entry-dropdown">
+            Adicionar comida:
+        </label>
+        <select id="entry-dropdown" name="options">
+            <option value="breakfast" selected>Café da Manhã</option>
+            <option value="lunch" >Almoço</option>
+            <option value="tea-time" >Lanche da Tarde</option>
+            <option value="dinner" >Jantar</option>
+        </select>
+
+        <div>
+            <button type="submit">Calcular Calorias Diárias</button>
+            <button id="clear" type="button">Limpar</button>
+        </div>
+        <div id="output" class="output hide"></div>
+    </form>
+</body>
+
+<script src="apps.js"></script>
+
+</html>
